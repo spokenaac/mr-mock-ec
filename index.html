@@ -137,13 +137,11 @@
     <div class="mr-mock-table container">
         <div class="mr-mock-tc-wrap">
             <div class="mr-mock-toc">
-                <a href="#january">January</a>
-                <a href="#february">February</a>
-                <a href="#march">March</a>
-            </div>
-            <div class="mr-mock-toc">
-                <a href="#april">April</a>
-                <a href="#april">May</a>
+                <a href="#january">January</a> |
+                <a href="#february">February</a> |
+                <a href="#march">March</a> |
+                <a href="#april">April</a> |
+                <a href="#april">May</a> |
                 <a href="#april">June</a>
             </div>
         </div>
@@ -563,13 +561,27 @@
             padding-top: 50px;
         }
 
-        .mr-mock-toc {
-            display: flex;
-            flex-wrap: wrap;
+        /* .mr-mock-toc a {
+            width: 100%;
+            padding: 0 8px;
         }
 
+        .mr-mock-toc a:first-of-type {
+            padding-left: 0;
+        }
+
+        .mr-mock-toc a:nth-child(2n) {
+            border-right: 1px solid #203856;
+            border-left: 1px solid #203856;
+            padding: 0 10px;
+        } */
+
         .mr-mock-toc a {
-            width: 100%;
+            margin: 0 6px;
+        }
+
+        .mr-mock-toc a:first-child {
+            margin-left: 0;
         }
 
         .mr-mock-tc-wrap {
