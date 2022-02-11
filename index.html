@@ -722,10 +722,10 @@
             let updateTags = [];
             for (const month of months) {
                 const monthRow = Array.from(rows[idx]);
-                const newMonth = monthRow.length > 0 ? month : ''
-
-                tbody.appendChild(newMonth);
-                updateTags.push(newMonth.id);
+                if (monthRow.length > 0) {
+                    tbody.appendChild(month);
+                    updateTags.push(month.id);
+                }
 
                 for (const row of monthRow) {
                     tbody.innerHTML += row.innerHTML;
